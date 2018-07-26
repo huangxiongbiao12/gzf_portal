@@ -1,0 +1,52 @@
+gzf:
+  db: zz_portal #请指定数据库
+  common-date-format: yyyy-MM-dd
+
+spring:
+  datasource: #数据源
+    url: jdbc:mysql://120.55.117.108/${gzf.db}?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 4s3c2a1p
+    driver-class-name: com.mysql.jdbc.Driver
+    type: org.apache.commons.dbcp2.BasicDataSource
+    dbcp2: #连接池
+      max-idle: 20
+      max-total: 20
+      initial-size: 5
+      max-wait-millis: 30000
+      test-on-borrow: true
+      validation-query: SELECT 1
+  redis: #redis
+    database: 0
+    host: localhost
+    port: 6379
+    password: 4s3c2a1p
+    pool:
+      max-idle: 20
+      max-active: 20
+      max-wait: 60000
+  http:
+    encoding: #http编码
+      charset: utf-8
+      enabled: true
+      force: true
+    multipart: #文件上传限制
+      max-file-size: 131072KB #128M
+      max-request-size: 131072KB
+  jackson:
+    date-format: ${gzf.common-date-format}
+    time-zone: GMT+8
+  mvc:
+    static-path-pattern: "/**"
+    date-format: ${gzf.common-date-format}
+server:
+  port: 8888
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+persistence:
+  date-format: yyyy-MM-dd
+  time-zone: GMT+8
+  default-page-size: 20
+logging:
+  level:
+    com.gzf.persist.mapper: debug

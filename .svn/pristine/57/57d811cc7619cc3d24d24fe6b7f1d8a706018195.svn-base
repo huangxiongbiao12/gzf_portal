@@ -1,0 +1,108 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "name": "gzf",
+      "type": "com.gzf.config.GzfProperties"
+    },
+    {
+      "sourceType": "com.gzf.util.storage.StorageProperties",
+      "name": "storageProperties",
+      "type": "com.gzf.util.storage.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "",
+      "name": "gzf.appid",
+      "description": "门锁客户端id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "",
+      "name": "gzf.card-interface",
+      "description": "门锁服务地址",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "UTF-8",
+      "name": "gzf.common-charset",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "yyyy-MM-dd HH:mm:ss",
+      "name": "gzf.common-date-format",
+      "description": "通用日期格式",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "name": "gzf.controller-packages",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "name": "gzf.d-e-f-a-u-l-t-d-a-t-e-t-i-m-e-z-o-n-e",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "",
+      "name": "gzf.db",
+      "description": "数据库名",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": 20,
+      "name": "gzf.default-page-size",
+      "description": "默认分页每页行数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "name": "gzf.default-time-unit",
+      "description": "默认时间单位",
+      "type": "java.util.concurrent.TimeUnit"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": [
+        ""
+      ],
+      "name": "gzf.entity-packages",
+      "description": "实体所在包名列表",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "name": "gzf.token-app-expire-time",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": 30,
+      "name": "gzf.token-expire-time",
+      "description": "token失效时间",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.gzf.config.GzfProperties",
+      "defaultValue": "upload-dir",
+      "name": "gzf.upload-dir",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.gzf.util.storage.StorageProperties",
+      "defaultValue": "upload-dir",
+      "name": "storageProperties.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}
